@@ -1,7 +1,12 @@
 import styles from './styles.module.scss';
 
+import { useState } from 'react';
 
 export default function Header() {
+    let [ mostrarSaldo, setMostrarSaldo ] = useState(true);
+    function toggleSaldo() {
+        setMostrarSaldo(mostrarSaldo = !mostrarSaldo);
+    }
     return (
         <header id={styles.header} role="header">
             <div id={styles.details}>
@@ -45,6 +50,33 @@ export default function Header() {
                         alt="icon-copy"
                     />
                 </div>
+            </div>
+            <div id={styles.saldo}>
+                <div id={styles.saldoText}>
+                    <span>Saldo</span>
+                    {
+                        mostrarSaldo
+                        ?
+                        <img
+                            src="/eyeNoMark.svg"
+                            alt="mostrar saldo"
+                            onClick={() => toggleSaldo()}
+                        />
+                        :
+                        <img
+                            src="/eyeMark.svg"
+                            alt="mostrar saldo"
+                            onClick={() => toggleSaldo()}
+                        />
+                    }
+                </div>
+                {
+                    mostrarSaldo
+                    ?
+                    <span className={styles.colorSaldo}>R$40.000,00</span>
+                    :
+                    <span className={styles.colorSaldo}>R$xx.xxx,xx</span>
+                }
             </div>
         </header>
     );

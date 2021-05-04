@@ -64,7 +64,6 @@ header#header {
         align-items: flex-start;
 
         div#option {
-            width: 350px;
 
             margin-left: 10px;
 
@@ -73,7 +72,8 @@ header#header {
             }
 
             span#dataBanco {
-                color: var(--purple-one)
+                color: var(--purple-one);
+                margin-top: 5px;
             }
 
             span#dataBanco:nth-of-type(2) {
@@ -106,10 +106,30 @@ header#header {
 
         background-color: var(--divider);
     }
+
+    div#saldo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        span.colorSaldo {
+            color: var(--green);
+            margin-top: 5px;
+        }
+
+        div#saldoText {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 
-header#header, div.logo, div#details, div#account {
+header#header, div.logo, div#details, div#account, div#saldo {
     display: flex;
     height: 71px;
 }
