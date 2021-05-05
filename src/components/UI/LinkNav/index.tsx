@@ -1,19 +1,14 @@
 import styles from './styles.module.scss';
 
-import { useState } from 'react';
 
 type LinkNavType = {
     linkIconWhite: string;
     linkIconNormal: string;
+    selecionado: boolean;
+    selecionar: () => void;
 }
 
-export default function LinkNav({ linkIconWhite, linkIconNormal }: LinkNavType) {
-    let [ selecionado, setSelecionado ] = useState(false);
-
-    function selecionar() {
-        setSelecionado(selecionado = !selecionado);
-    }
-
+export default function LinkNav({ linkIconWhite, linkIconNormal, selecionado, selecionar }: LinkNavType) {
     return (
         <div id={styles.itemIcon}>
             {

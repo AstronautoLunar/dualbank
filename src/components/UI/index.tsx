@@ -7,6 +7,9 @@ import InputArea from './InputArea';
 import PanelUser from './PanelUser';
 import UserImage from './UserImage';
 import LinkNav from './LinkNav';
+import BotaoNav from './BotaoNav';
+import ColumnItemNav from './ColumnItemNav';
+import NavDetailsIcon from './NavDetailsIcon';
 
 export { 
     Details, 
@@ -17,5 +20,8 @@ export {
     InputArea, 
     PanelUser, 
     UserImage,
-    LinkNav
+    LinkNav,
+    BotaoNav,
+    ColumnItemNav,
+    NavDetailsIcon,
 };

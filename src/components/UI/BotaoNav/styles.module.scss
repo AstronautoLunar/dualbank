@@ -1,0 +1,28 @@
+div#buttonStyle {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 40px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--purple-nav);
+
+    img.navAberta, img.navFechada {
+        transition: all 0.5s;
+    }
+
+    img.navAberta {
+        transform: rotate(180deg);
+    }
+
+    img.navFechada {
+        transform: rotate(0deg);
+    }
+}

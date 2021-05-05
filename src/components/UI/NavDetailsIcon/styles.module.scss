@@ -1,0 +1,24 @@
+div#container {
+    width: 80px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        font-size: 13px;
+    }
+}
+
+div.containerColorOn {
+    background-color: var(--purple-nav);
+
+    color: white;
+}
+
+div.containerColorOff {
+    background-color: var(--white);
+
+    color: var(--purple-nav);
+}
