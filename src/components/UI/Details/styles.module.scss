@@ -1,0 +1,54 @@
+div#details {
+    
+    display: flex;
+    justify-content: flex-start;
+    height: 71px;
+
+    div.logo {
+        width: 160px;
+        
+        margin-left: 10px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        div#logoIcon {
+            width: 40px;
+            height: 40px;
+
+            position: relative;
+
+            img {
+                position: absolute;
+
+            }
+
+            img[src="./iconPartOne.svg"] {
+                top: 50%;
+                left: 50%;
+                transform: translate(-59%, -70.5%);
+            }
+
+            img[src="./iconPartTwo.svg"] {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        }
+
+        p {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+            span#logoNameDual {
+                color: var(--purple-one);
+            }
+
+            span#logoNameBank {
+                color: var(--purple-two);
+            }
+        }
+    }
+}

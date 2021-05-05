@@ -1,0 +1,23 @@
+div#inputArea {
+    border: 1px solid var(--Greyish-Green);
+    border-radius: 7px;
+    
+    width: 160px;
+    height: 25px;
+
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+
+    input {
+        border: none;
+
+        width: 75.5%;
+
+        margin-left: 12px;
+
+        outline: none;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,54 @@
+
+div#account {
+    width: 400px;
+    height: 71px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    div#dataAccountBanco {
+
+        display: flex;
+        align-items: center;
+
+        margin-left: 10px;
+
+        img {
+            margin: 0px 10px;
+        }
+
+        span#dataBanco {
+            color: var(--purple-one);
+            margin-top: 5px;
+        }
+
+        span#dataBanco:nth-of-type(2) {
+            margin-left: 20px;
+        }
+
+        div#iconBox {
+            width: 10px;
+            height: 10px;
+
+            div {
+                width: 10px;
+                height: 10px;
+
+                border: 1px solid black;
+            }
+        }
+
+        img.opcoesAbertas, img.opcoesFechadas {
+            transition: all 0.5s;
+        }
+        img.opcoesAbertas {
+            transform: rotate(180deg);
+        }
+
+        img.opcoesFechadas {
+            transform: rotate(0);
+        }
+    }
+}

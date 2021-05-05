@@ -1,0 +1,23 @@
+
+div#saldo {
+    height: 71px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    span.colorSaldo {
+        color: var(--green);
+        margin-top: 5px;
+    }
+
+    div#saldoText {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}
