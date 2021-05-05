@@ -6,6 +6,7 @@ import TogglePainelOptions from './TogglePainelOptions';
 import InputArea from './InputArea';
 import PanelUser from './PanelUser';
 import UserImage from './UserImage';
+import LinkNav from './LinkNav';
 
 export { 
     Details, 
@@ -15,5 +16,6 @@ export {
     TogglePainelOptions, 
     InputArea, 
     PanelUser, 
-    UserImage 
+    UserImage,
+    LinkNav
 };
