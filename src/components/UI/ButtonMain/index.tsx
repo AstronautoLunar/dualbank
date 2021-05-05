@@ -1,9 +1,9 @@
 import styles from './styles.module.scss';
 
-export default function ButtonMain() {
+export default function ButtonMain({ src }) {
     return (
         <div id={styles.buttonMain}>
-            <img/>
+            <img src={src}/>
         </div>
     );
 }

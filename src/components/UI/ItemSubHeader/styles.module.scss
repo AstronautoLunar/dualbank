@@ -1,0 +1,45 @@
+div#container {
+
+    display: flex;
+
+    margin: 0 35px;
+
+    div#imageTipoDinheiro {
+        width: 35px;
+        height: 35px;
+
+        border-radius: 35px;
+
+        // background: linear-gradient(89.96deg, #622EE5 0.06%, #172765 99.94%);
+
+        color: white;
+
+        justify-content: center;
+    }
+
+    div#barraConta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        margin-left: 5px;
+
+        div#topBarraConta {
+            margin-bottom: 2.5px;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        span.moneyColor {
+            color: var(--green);
+        }
+    }
+}
+
+div#container, div#imageTipoDinheiro, div#imageTipoDinheiro, div#topBarraConta {
+    display: flex;
+    align-items: center;
+}

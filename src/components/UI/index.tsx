@@ -10,6 +10,8 @@ import LinkNav from './LinkNav';
 import BotaoNav from './BotaoNav';
 import ColumnItemNav from './ColumnItemNav';
 import NavDetailsIcon from './NavDetailsIcon';
+import ButtonMain from './ButtonMain';
+import ItemSubHeader from './ItemSubHeader';
 
 export { 
     Details, 
@@ -24,4 +26,6 @@ export {
     BotaoNav,
     ColumnItemNav,
     NavDetailsIcon,
+    ButtonMain,
+    ItemSubHeader,
 };

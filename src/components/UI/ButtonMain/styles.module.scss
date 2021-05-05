@@ -1,6 +1,15 @@
 div#buttonMain {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 35px;
+
+    margin: 0 10px;
+    
+    background: linear-gradient(135deg, #FFFFFF 0%, #E5E4E2 100%);
+
 }
