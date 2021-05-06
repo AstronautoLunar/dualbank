@@ -15,16 +15,57 @@ div#account {
 
         margin-left: 10px;
 
-        img {
+        position: relative;
+
+        img[src="/iconSeta.svg"] {
+            margin-left: 10px;
+        }
+
+        img[src="/iconPopoverCopiar.svg"] {
+            position: absolute;
+            bottom: 10px;
+
+            display: none;
+        }
+        
+        // img[src="/iconPopoverCopiar.svg"].mostrarPop {
+        //     display: block;
+        // }
+
+        // img[src="/iconPopoverCopiar.svg"].esconderPop {
+        //     display: none;
+        // }
+
+        img[src="/CopySimple.svg"] {
             margin: 0px 10px;
         }
 
-        span#dataBanco {
-            color: var(--purple-one);
+        div.textoConta {
             margin-top: 5px;
+
+            position: relative;
+
+            span#dataBanco {
+                color: var(--purple-one);
+                cursor: pointer;
+            }
         }
 
-        span#dataBanco:nth-of-type(2) {
+        div.textoConta:nth-of-type(1):hover {
+
+            img#pop1 {
+                display: block;
+            }
+        }
+
+        div.textoConta:nth-of-type(2):hover {
+
+            img#pop2 {
+                display: block;
+            }
+        }
+        
+        div.textoConta:nth-of-type(2) {
             margin-left: 20px;
         }
 
@@ -49,6 +90,29 @@ div#account {
 
         img.opcoesFechadas {
             transform: rotate(0);
+        }
+
+        div#image {
+            position: relative;
+
+            img[src="/iconPopCopiarTudo.svg"] {
+                position: absolute;
+                top: -35px;
+                left: -7.5px;
+
+                display: none;
+            }
+
+            img[src="/CopySimple.svg"] {
+                cursor: pointer;
+            }
+        }
+        
+        div#image:hover {
+
+            img[src="/iconPopCopiarTudo.svg"] {
+                display: block;
+            }
         }
     }
 }
