@@ -14,9 +14,15 @@
     --Greyish-Green: #778899;
     --border-color-user: #4C77BF;
     --purple-nav: #622EE5;
-
 }
 
 div#container {
     display: flex;
+
+    div#mainHeader {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
 }

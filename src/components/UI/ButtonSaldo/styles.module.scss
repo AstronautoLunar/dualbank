@@ -1,0 +1,22 @@
+div#buttonContainer {
+    width: 100px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    margin-right: 20px;
+    
+    border: 1px solid var(--purple-nav);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mudarBranco {
+    background-color: var(--white);
+}
+
+div.mudarRoxo {
+    background: linear-gradient(270deg, #622EE5 0%, #A683FF 100%);
+}

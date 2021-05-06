@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 
-import { Header, Nav } from '../components';
+import { Header, Nav, SubHeader } from '../components';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,7 +10,10 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div id="container">
         <Nav/>
-        <Component {...pageProps} />
+        <div id="mainHeader">
+          <SubHeader/>
+          <Component {...pageProps} />
+        </div>
       </div>
     </>
   ) 

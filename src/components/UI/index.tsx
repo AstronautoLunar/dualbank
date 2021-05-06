@@ -12,6 +12,8 @@ import ColumnItemNav from './ColumnItemNav';
 import NavDetailsIcon from './NavDetailsIcon';
 import ButtonMain from './ButtonMain';
 import ItemSubHeader from './ItemSubHeader';
+import Title from './Title';
+import ButtonSaldo from './ButtonSaldo';
 
 export { 
     Details, 
@@ -28,4 +30,6 @@ export {
     NavDetailsIcon,
     ButtonMain,
     ItemSubHeader,
+    Title,
+    ButtonSaldo,
 };

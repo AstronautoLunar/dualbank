@@ -1,0 +1,15 @@
+div#containerMain {
+    margin-left: 20px;
+    margin-top: 20px;
+
+    display: flex;
+
+    div#barTop {
+        display: flex;
+        align-items: center;
+
+        div#listaBotoes {
+            display: flex;
+        }
+    }
+}

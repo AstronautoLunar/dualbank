@@ -60,7 +60,7 @@ export default function Account({ logica, toggleOpcoes }: TypeAbrirOpcoesSaldo) 
                     <span 
                         id={styles.dataBanco}
                         className="codigo1"
-                        >
+                    >
                         Ag. 00005-1
                     </span>
                 </div>

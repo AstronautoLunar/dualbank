@@ -1,11 +1,11 @@
 import styles from '../styles/home.module.scss';
 
-import { SubHeader } from '../components';
+import { Main } from '../components';
 
 export default function Home() {
   return (
     <div id={styles.main}>
-      <SubHeader/>
+      <Main/>
     </div>
   )
 }
