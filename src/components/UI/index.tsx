@@ -18,6 +18,7 @@ import DataSaldo from './DataSaldo';
 import IconLoading from './IconLoading';
 import WindowBottomBar from './WindowBottomBar';
 import ButtonWindow from './ButtonWindow';
+import AreaSaldoDisponivel from './AreaSaldoDisponivel';
 
 export { 
     Details, 
@@ -40,4 +41,5 @@ export {
     IconLoading,
     WindowBottomBar,
     ButtonWindow,
+    AreaSaldoDisponivel,
 };

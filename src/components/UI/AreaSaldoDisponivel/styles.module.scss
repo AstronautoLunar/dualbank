@@ -1,0 +1,57 @@
+div#container {
+    background-color: var(--gray);    
+
+    border-bottom: 1px solid var(--Greyish-Green);
+
+    box-shadow: 0 0 2px 1px rgba(20, 20, 20, 0.2);
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    width: 280px;
+    height: 47px;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+    img[src="/ShieldCheck.svg"] {
+        width: 24px;
+        height: 24px;
+
+        margin-left: 10px;
+    }
+
+    position: relative;
+
+    div#text {
+        flex-direction: column;
+        
+        margin-left: 10px;
+
+        span#title {
+            color: var(--Greyish-Green);
+
+            font-size: 11.5px;
+
+            margin-bottom: 2px;
+        }
+
+        span.colorGreen {
+            color: var(--green);
+        }
+    }
+
+    img[src="/eyeMark.svg"], img[src="/eyeNoMark.svg"] {
+        width: 24px;
+        height: 24px;
+
+        position: absolute;
+
+        right: 10px;
+    }
+}
+
+div#container, div#text {
+    display: flex;
+}

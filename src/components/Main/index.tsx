@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-import { Title, ButtonSaldo, DataSaldo, WindowBottomBar, ButtonWindow } from '../UI';
+import { Title, ButtonSaldo, DataSaldo, WindowBottomBar, ButtonWindow, AreaSaldoDisponivel } from '../UI';
 
 import { useState } from 'react';
 
@@ -60,6 +60,9 @@ export default function Main() {
                     abrirOpcoes={abrirLogicaJanela}
                     toggleJanela={toggleJanela}    
                 />
+                <AreaSaldoDisponivel
+                    saldo="40.000,00"
+                />
                 <WindowBottomBar
                     saldoDisponibilizado="20.000,00"
                     saldoDistribuido="12.050,00"
@@ -69,9 +72,6 @@ export default function Main() {
                         Alterar
                     </ButtonWindow>
                 </WindowBottomBar>
-                {
-                    // Componente 
-                }
             </div>
         </div>
     );
