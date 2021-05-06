@@ -18,12 +18,20 @@
 Você precisa apenas de um editor de código e obviamente de um navegador, recomendo usar o google chrome
 
 # Copie e cole no seu GIT
-$ git clone https://github.com/Pyedrown/desafio-profile-card-component-main.git
+$ git clone https://github.com/Pyedrown/dualbank.git
 
 # e em seguida use
-$ cd desafio-profile-card-component-main
+$ cd dualbank
+
+# baixe a dependências do projeto usando
+$ npm install
 
 ## Tecnologias
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [ReactJs](https://pt-br.reactjs.org/)
+- [NextJs](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [SASS](https://sass-lang.com/)
