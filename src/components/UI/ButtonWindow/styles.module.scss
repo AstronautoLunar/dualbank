@@ -1,0 +1,19 @@
+div#buttonWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--purple-nav);
+
+    width: 117px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    // background-color: 
+    span {
+        font-weight: bold;
+
+        color: var(--white);
+    }
+}

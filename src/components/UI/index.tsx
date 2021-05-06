@@ -14,6 +14,10 @@ import ButtonMain from './ButtonMain';
 import ItemSubHeader from './ItemSubHeader';
 import Title from './Title';
 import ButtonSaldo from './ButtonSaldo';
+import DataSaldo from './DataSaldo';
+import IconLoading from './IconLoading';
+import WindowBottomBar from './WindowBottomBar';
+import ButtonWindow from './ButtonWindow';
 
 export { 
     Details, 
@@ -32,4 +36,8 @@ export {
     ItemSubHeader,
     Title,
     ButtonSaldo,
+    DataSaldo,
+    IconLoading,
+    WindowBottomBar,
+    ButtonWindow,
 };

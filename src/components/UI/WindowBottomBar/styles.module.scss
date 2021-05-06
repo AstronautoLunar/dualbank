@@ -1,0 +1,57 @@
+div#container {
+    background: linear-gradient(89.96deg, #F9F9F9 0.06%, #E5E4E2 99.94%);
+
+    position: absolute;
+    top: 40px;
+    left: 240px;
+
+    width: 250px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: 0 0 10px 2px rgba(20, 20, 20, 0.2);
+
+    div.columnSaldo {
+        margin: 10px 0px;
+
+        span.titleSaldo, span.textWindow {
+            color: var(--dark-blue);
+
+            font-size: 13.5px;
+        }
+
+        span.titleSaldo {
+            font-weight: bold;
+        }
+
+        color: var(--dark-blue);
+
+        span.textWindow {
+            margin-top: 5px;
+
+            span.color {
+                color: var(--green);
+            }
+        }
+    }
+
+    div.columnSaldo:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+}
+
+div#container, div.columnSaldo {
+    flex-direction: column;
+}
+
+div.containerAbrir {
+    display: flex;
+}
+
+div.containerFechar {
+    display: none;
+}

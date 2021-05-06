@@ -3,6 +3,7 @@ div#containerMain {
     margin-top: 20px;
 
     display: flex;
+    flex-direction: column;
 
     div#barTop {
         display: flex;
@@ -11,5 +12,11 @@ div#containerMain {
         div#listaBotoes {
             display: flex;
         }
+    }
+
+    div#bottomBar {
+        margin-top: 35px;
+
+        position: relative;
     }
 }

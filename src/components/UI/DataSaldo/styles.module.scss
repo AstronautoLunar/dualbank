@@ -1,0 +1,60 @@
+div#containerDataSaldo {
+    width: 280px;
+    height: 47px;
+
+    background-color: var(--gray-data-input);
+
+    border-bottom: 1px solid var(--purple-nav);
+
+    box-shadow: 0 0 1px 0.5px rgba(20, 20, 20, 0.2);
+
+    position: relative;
+    
+    img[src="/CaretDown.svg"] {
+        position: absolute;
+        right: 10px;
+        bottom: 11px;
+        
+        transition: all 0.2s;
+    }
+
+    img[src="/CaretDown.svg"].imageRotate {
+        transform: rotate(-180deg);
+    }
+
+    div#dataSaldoText {
+        
+        flex-direction: column;
+        
+        margin-left: 20px;
+        margin-top: 5px;
+
+        span:nth-of-type(1) {
+            font-size: 15px;
+    
+            color: var(--purple-nav);
+        }
+        
+
+        span:nth-of-type(2) {
+            font-size: 20px;
+
+            margin-top: 1.5px;
+        }
+
+        
+    }
+
+}
+
+div#textSaldo {
+    margin-left: 20px;
+    margin-top: 5px;
+
+    align-items: center;
+}
+
+
+div#containerDataSaldo, div#dataSaldoText, div#textSaldo {
+    display: flex;
+}

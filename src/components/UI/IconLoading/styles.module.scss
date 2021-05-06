@@ -1,0 +1,37 @@
+div#iconLoading {
+    width: 24px;
+    height: 24px;
+
+    margin-left: 10px;
+
+    background-image: url(/ArrowClockwise.svg);
+}
+
+div.animationRefreshing:hover {
+    width: 24px;
+    height: 24px;
+    animation-name: refreshing;
+    animation-duration: 2s;
+}
+
+@keyframes refreshing {
+    0% {
+        background-image: url(/ArrowClockwise.svg);
+    }
+
+    25% {
+        background-image: url(/RefreshingPart1.svg);
+    }
+
+    50% {
+        background-image: url(/RefreshingPart2.svg);
+    }
+
+    75% {
+        background-image: url(/RefreshingPart3.svg);
+    }
+
+    100% {
+        background-image: url(/RefreshingPart4.svg);
+    }
+}
