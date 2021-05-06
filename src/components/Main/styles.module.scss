@@ -5,6 +5,10 @@ div#containerMain {
     display: flex;
     flex-direction: column;
 
+    position: relative;
+
+    height: 70vh;
+
     div#barTop {
         display: flex;
         align-items: center;

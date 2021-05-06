@@ -5,9 +5,10 @@ import { useState } from 'react';
 type ButtonSaldoType = {
     srcImageWhite: string;
     srcImageNormal: string;
+    acao: () => void;
 }
 
-export default function ButtonSaldo({ srcImageWhite, srcImageNormal }: ButtonSaldoType) {
+export default function ButtonSaldo({ srcImageWhite, srcImageNormal, acao }: ButtonSaldoType) {
     let [ CorImage, setCorImage ] = useState(false);
 
     let [ styleButton, setStyleButton ] = useState(false)
@@ -18,25 +19,27 @@ export default function ButtonSaldo({ srcImageWhite, srcImageNormal }: ButtonSal
     }
 
     return (
-        <div 
-            id={styles.buttonContainer}
-            className={styles[
-                styleButton
-                ?
-                "mudarRoxo"
-                :
-                "mudarBranco"
-            ]}
-            onClick={() => mudarCor()}
-        >
-            {
-                CorImage
-                ?
-                <img src={srcImageWhite} alt="icon-home"/>
-                :
-                <img src={srcImageNormal} alt="icon-home"/>
+        <div onClick={() => acao()}>
+            <div 
+                id={styles.buttonContainer}
+                className={styles[
+                    styleButton
+                    ?
+                    "mudarRoxo"
+                    :
+                    "mudarBranco"
+                ]}
+                onClick={() => mudarCor()}
+            >
+                {
+                    CorImage
+                    ?
+                    <img src={srcImageWhite} alt="icon-home"/>
+                    :
+                    <img src={srcImageNormal} alt="icon-home"/>
 
-            }
+                }
+            </div>
         </div>
     );
 }

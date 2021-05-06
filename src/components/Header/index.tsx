@@ -5,24 +5,27 @@ import {
     Diviser, 
     Account, 
     Saldo, 
-    TogglePainelOptions, 
     InputArea, 
     PanelUser, 
-    UserImage
+    UserImage,
+    TogglePainelOptions
 } from '../UI';
 
 import { useState } from 'react';
 
 export default function Header() {
     let [ mostrarSaldo, setMostrarSaldo ] = useState(true);
-    let [ abrirOpcoesSaldo, setAbrirOpcoesSaldo] = useState(false);
 
     function toggleSaldo() {
         setMostrarSaldo(mostrarSaldo = !mostrarSaldo);
     }
+
+    let [ abrirOpcoesSaldo, setAbrirOpcoesSaldo] = useState(false);
+
     function toggleOpcoes() {
         setAbrirOpcoesSaldo(abrirOpcoesSaldo = !abrirOpcoesSaldo);
     }
+
 
     return (
         <>

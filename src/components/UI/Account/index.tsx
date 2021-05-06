@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 type TypeAbrirOpcoesSaldo = {
     logica: boolean;
@@ -10,19 +10,6 @@ type TypeAbrirOpcoesSaldo = {
 
 export default function Account({ logica, toggleOpcoes }: TypeAbrirOpcoesSaldo) {
 
-    useEffect(() => {
-        let codigo1 = window.document.getElementsByClassName('codigo1')[0]
-
-        let codigo2 = window.document.getElementsByClassName('codigo2')[0]
-        
-        codigo1.addEventListener('click', () => {
-            navigator.clipboard.writeText(codigo1.innerHTML);
-        })
-
-        codigo2.addEventListener('click', () => {
-            navigator.clipboard.writeText(codigo2.innerHTML);
-        })
-    }, [])
 
     return (
         <div id={styles.account}>
@@ -85,6 +72,7 @@ export default function Account({ logica, toggleOpcoes }: TypeAbrirOpcoesSaldo) 
                     <img
                         src="/CopySimple.svg"
                         alt="icon-copy"
+                        id="imageCopiarColar"
                     />
                 </div>
             </div>

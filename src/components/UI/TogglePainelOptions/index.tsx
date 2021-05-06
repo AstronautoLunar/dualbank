@@ -23,6 +23,33 @@ function BancoOption({ tipoConta, texto1, texto2 }: BancoOptionType) {
 }
 
 export default function TogglePainelOptions({ logica }) {
+    const dadosAgencia = [
+        {
+            tipoConta: "Conta Corrente",
+            texto1: "Ag. 00005-1",
+            texto2: "C.C. 00000000000000000020-1",
+        },
+        {
+            tipoConta: "Conta Poupança",
+            texto1: "Ag. 00005-1",
+            texto2: "C.C. 01010010001000010000-2",
+        },
+        {
+            tipoConta: "C.C. Ed. Suzano",
+            texto1: "Ag. 00005-1",
+            texto2: "C.C. 000000000000015-1",
+        },
+        {
+            tipoConta: "C.C. Condomínio Guillermo",
+            texto1: "Ag. 00005-1",
+            texto2: "C.C. 00000000000000017-1",
+        },
+        {
+            tipoConta: "C.C. Residencial Figma ômega",
+            texto1: "Ag. 00005-1",
+            texto2: "C.C. 0000000000000000019-1",
+        }
+    ]
     return (
         <div>
             {
@@ -32,36 +59,17 @@ export default function TogglePainelOptions({ logica }) {
                     className={styles.abrirPanelOption}
                     id={styles.panelOptions}
                 >
-                     <BancoOption
-                        tipoConta="Conta Corrente"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 00000000000000000020-1"
-                     />
-                     <BancoOption
-                        tipoConta="Conta Poupança"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 01010010001000010000-2"
-                     />
-                     <BancoOption
-                        tipoConta="C.C. Ed. Suzano"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 000000000000015-1"
-                     />
-                     <BancoOption
-                        tipoConta="C.C. Condomínio Guillermo"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 00000000000000017-1"
-                     />
-                     <BancoOption
-                        tipoConta="C.C. Residencial Figma ômega"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 0000000000000000019-1"
-                     />
-                     <BancoOption
-                        tipoConta="C.C. Residencial Figma ômega"
-                        texto1="Ag. 00005-1"
-                        texto2="C.C. 0000000000000000019-1"
-                     />
+                    {
+                        dadosAgencia.map(item => {
+                            return (
+                                <BancoOption
+                                    tipoConta={item.tipoConta}
+                                    texto1={item.texto1}
+                                    texto2={item.texto2}
+                                />
+                            )
+                        })
+                    }
                 </div>  
                 :
                 <div 

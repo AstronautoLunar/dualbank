@@ -19,6 +19,7 @@ import IconLoading from './IconLoading';
 import WindowBottomBar from './WindowBottomBar';
 import ButtonWindow from './ButtonWindow';
 import AreaSaldoDisponivel from './AreaSaldoDisponivel';
+import Notification from './Notification';
 
 export { 
     Details, 
@@ -42,4 +43,5 @@ export {
     WindowBottomBar,
     ButtonWindow,
     AreaSaldoDisponivel,
+    Notification,
 };
